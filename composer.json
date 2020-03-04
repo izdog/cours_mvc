@@ -1,0 +1,19 @@
+{
+    "name": "ffridel/cours_mvc",
+    "authors": [
+        {
+            "name": "Florian"
+        }
+    ],
+    "require": {
+        "bramus/router": "~1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.0"
+    }
+}
