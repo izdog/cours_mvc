@@ -58,7 +58,10 @@ Génère la/les vues
 
 --- 
 
-<!-- _class: lead -->
+<!-- _class: 
+    - lead 
+    - invert
+-->
 
 ![center](assets/mvc.png)
 
@@ -66,4 +69,64 @@ Génère la/les vues
 
 ## Router
 
-Définir un uniquement point d'entrée dans la l'application
+Rediriger toutes les URLS vers un uniquement point d'entrée pour :
+
+- Centralisé les éléments essentiels au bon fonctionnement de l'application
+- Utiliser des URLS personnalisées
+
+---
+<!-- _class: invert -->
+![center](assets/routeur.png)
+
+---
+
+# Exemple de table de routage
+
+Table de routage Symfony YAML :
+
+``` yaml
+# config/routes.yaml
+blog_list:
+    path: /blog
+    controller: App\Controller\BlogController::list
+    methods: GET|HEAD
+
+api_post_show:
+    path: /api/posts/{id}
+    controller: App\Controller\BlogApiController::show
+    methods: GET|HEAD
+```
+
+---
+
+# Exemple de table de routage
+
+Table de routage Laravel PHP :
+
+```php
+Route::get('/article', 'ArticleController@index');
+
+Route::get('/article/{id}', 'ArticleController@show');
+
+Route::put('/article/edit/{id}', 'ArticleController@edit');
+
+Route::post('/article/post', 'ArticleController@post')
+```
+
+---
+
+# Avantages
+
+**Séparation des différentes couches de l'application**
+
+**Permet le travail à plusieurs**
+
+**Réutilisabilité**
+
+---
+
+# Contraintes
+
+**Beaucoup de fichier à manipuler**
+
+**Difficultés de conception**

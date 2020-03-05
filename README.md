@@ -49,6 +49,8 @@ L'idée derrière le **Router** est de définir un unique point d'entrée dans n
 
 ### Fonctionnement
 
+<p style="text-align: center"><img src="assets/routeur.png" witdh="150px"></p>
+
 Le **router** va analyser l'URL pour obtenir une **route**, il va ensuite regarder dans la table de routage(un ensemble de motifs de route *ex: /blog/([a-z0-9_-]+)* ) si la route existe puis il va envoyer une réponse au navigateur. Dans le cas où aucune route n'est défini pour l'URL alors l'application repondera ERROR 404 NOT FOUND.
 
 > *Dans ce cours nous ne développerons pas de router. Nous nous contenterons de récupérer une bibliothèque.*
