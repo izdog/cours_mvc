@@ -10,5 +10,4 @@ require_once('./vendor/autoload.php');
 
 // Création du routeur
 
-
 echo '<h1>Bonjour le monde</h1>';
