@@ -40,7 +40,7 @@ Exemple d'action :
 - Trier des données d'un tableau via un clic sur les en-têtes des colonnes
 - Récupérer les données au format JSON
 
-<p style="text-align: center"><img src="assets/MVC.png" width="150px"></p>
+<p style="text-align: center"><img src="assets/MVC.png" width="450px"></p>
 
 ## Router
 ---
